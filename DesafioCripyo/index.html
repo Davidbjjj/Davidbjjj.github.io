@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Decodificador</title>
     <link rel="stylesheet" href="staly.css">
 </head>
 <header>
@@ -16,13 +16,17 @@
 </header>
 
 <body>
-    <input type="text" class="texto" placeholder="Digite seu texto">
-    <div class="Respostas">
-        <img src="High quality products 1 1.svg" alt="" class="imagem">
-        <div class="textmens">
+    <textarea type="text" id="texto" placeholder="Digite seu texto" cols="30" rows="50"></textarea>
+    <div id="Respostas">
+        <div id="textmens">
+            <img src="High quality products 1 1.svg" alt="" class="imagem">
             <h3 class="titulo">Nenhuma mensagem encontrada</h3>
+            <p class="paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
         </div>
-        <p class="paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <div id="textResp">
+            <textarea type="text" id="resp" placeholder="Digite seu texto" cols="30" rows="50"></textarea>
+            <button class="copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
     </div>
     <div class="sifras">
         <div class="Alerta">
@@ -38,8 +42,8 @@
             </svg>
 Apenas letras minúsculas e sem acento.
         </div>
-        <button class="Cripto" onclick="">Criptografas</button>
-        <button class="Descripto" onclick="">Descriptografas</button>
+        <button class="Cripto" onclick="Criptar()">Criptografas</button>
+        <button class="Descripto" onclick="Descriptar()">Descriptografas</button>
     </div>
 
 

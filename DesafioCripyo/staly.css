@@ -7,6 +7,7 @@ html{
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     width: 1440px;
@@ -25,7 +26,7 @@ header{
     height: 48px;
 
 }
-.Respostas{
+#Respostas{
     box-sizing: border-box;
     width: 400px;
     height: 944px;
@@ -38,7 +39,7 @@ header{
     margin-bottom: 40px;
     margin-right: 40px;
 }
-.texto::placeholder{
+#texto::placeholder{
     width: 680px;
     color: var(--Dark-blue-dark-blue-300, #0A3871);
     font-family: Inter;
@@ -55,8 +56,9 @@ header{
     
     
 }
-.texto{
+#texto{
     width: 680px;
+    height:550px;
     color: var(--Dark-blue-dark-blue-300, #0A3871);
     background-color: transparent;
     font-family: Inter;
@@ -75,7 +77,6 @@ header{
     align-items:flex-end;
     margin: 24px;
     margin-left:175px;
-    margin-top: 600px;
 
 }
 .Cripto{
@@ -148,4 +149,38 @@ header{
 .iconalert{
     transform: translateY(5px);
     margin-right: 5px;
+}
+#resp{
+    width: 336px;
+    height: 781px;
+    flex-shrink: 0;
+    color: var(--Gray-gray-400, #495057);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+.copiar{
+    color: var(--Dark-blue-dark-blue-300, #0A3871);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 328px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+    background: #D8DFE8;
+    margin-left: 35px;
 }
