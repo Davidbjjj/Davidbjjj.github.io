@@ -184,3 +184,12 @@ header{
     background: #D8DFE8;
     margin-left: 35px;
 }
+footer{
+    text-align: center;
+}
+#futer{
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0A3871;
+}

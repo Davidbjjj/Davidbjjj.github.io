@@ -8,6 +8,8 @@ function Criptar(){
     exibirTecto.innerHTML=encripitado
 }
 function Descriptar(){
+  tirarImagem();
+  tirartexto();
     let pegarTexto = document.getElementById('texto').value;
     let encrip=descripitando(pegarTexto);
     let exibirTecto=document.getElementById('resp');
